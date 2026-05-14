@@ -1,0 +1,7 @@
+<h1>Reporte de Ventas - {{ hoy }}</h1>
+<p>Total: ${{ total }}</p>
+<ul>
+{% for v in ventas %}
+    <li>{{ v.cliente }} - ${{ v.total }} ({{ v.metodo_pago }})</li>
+{% endfor %}
+</ul>
